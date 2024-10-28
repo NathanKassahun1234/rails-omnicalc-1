@@ -1,0 +1,13 @@
+<h1>Calculate Monthly Payment</h1>
+<%= form_with url: '/payment/result', method: :get do %>
+  <label for="apr">Annual Percentage Rate (APR)</label>
+  <%= text_field_tag :apr %>
+  
+  <label for="years">Number of Years</label>
+  <%= text_field_tag :years %>
+  
+  <label for="principal">Principal</label>
+  <%= text_field_tag :principal %>
+  
+  <%= submit_tag 'Calculate monthly payment' %>
+<% end %>

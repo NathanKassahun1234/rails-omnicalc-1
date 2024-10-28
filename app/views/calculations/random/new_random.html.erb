@@ -1,0 +1,10 @@
+<h1>Pick a Random Number</h1>
+<%= form_with url: '/random/result', method: :get do %>
+  <label for="min">Minimum</label>
+  <%= text_field_tag :min %>
+  
+  <label for="max">Maximum</label>
+  <%= text_field_tag :max %>
+  
+  <%= submit_tag 'Pick random number' %>
+<% end %>

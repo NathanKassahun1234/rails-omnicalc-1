@@ -1,0 +1,6 @@
+<h1>Calculate Square</h1>
+<%= form_with url: '/square/result', method: :get do %>
+  <label for="number">Enter a number</label>
+  <%= text_field_tag :number %>
+  <%= submit_tag 'Calculate square' %>
+<% end %>
